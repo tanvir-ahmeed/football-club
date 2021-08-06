@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -18,22 +19,23 @@ main {
 .container {
     width: 1050px;
 }
+
 .team-btn {
     font-size: 16px;
     background-color: #E02C6D;
     color: #fff;
     border: none;
     padding: 10px 20px;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .team-btn .fas {
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 .team-btn:hover {
     cursor: pointer;
-    background-color: #78af12cc;
+    background-color: #ff005dcc;
     padding: 10px 50px;
     border-radius: 10px;
 }
@@ -72,16 +74,14 @@ main {
     cursor: pointer;
     transform: translateY(-10px);
 }
-/*-----------------------------*\
-         main style
-\*-----------------------------*/
 
 /*-----------------------------*\
          players card's style
 \*-----------------------------*/
+
+
 .all-players {
-    width: 1050px;
-    margin: auto;
+    margin-bottom: 140px;
 }
 
 .players {
@@ -112,7 +112,8 @@ main {
     margin: 16px 0 10px 0;
 }
 
-.player-description p {
+.player-description p,
+.highlight-description p {
     font-size: 16px;
     line-height: 26px;
     font-weight: normal;
@@ -153,6 +154,67 @@ main {
     width: 567px;
     height: 427px;
 }
+
+/*-----------------------------*\
+         bonus 1 style
+\*-----------------------------*/
+table {
+    width: 100%;
+}
+
+.point-section {
+    margin: 100px 0;
+}
+
+.pints-table {
+    margin-bottom: 50px;
+}
+
+.pints-table h2 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.835);
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr td {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6C6C6C;
+}
+
+td {
+    border: 1px solid lightgray;
+    padding: 10px 65px;
+}
+
+tr:nth-child(2n) {
+    background-color: rgba(211, 211, 211, 0.171);
+}
+
+.all-point {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.all-point button {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 50px;
+    border: none;
+    color: rgba(0, 0, 0, 0.596);
+    border: 2px solid lightgray;
+    transition: 0.5s;
+}
+
+.all-point button:hover {
+    background-color: #E02C6D;
+    color: #fff;
+}
+
 
 /*-----------------------------*\
          footer style
@@ -204,17 +266,22 @@ small {
     .container,
     .highlight-container {
         width: 100%;
+        grid-template-columns: repeat(1, 1fr);
     }
+
+
 
     .header-content {
         padding: 0 10px;
         flex-direction: column;
+        
     }
 
     .header-banner img {
         width: 100%;
         height: 100%;
         margin-top: 20px;
+        
     }
 
     .header-title h2 {
@@ -241,13 +308,34 @@ small {
     }
 
     .highlight-description {
-        width: 100%;
+        width: 80%;
+        margin-bottom: 150px;
 
     }
 
     .highlight-description h2 {
         font-size: 40px
     }
+
+    /* bonus 1 */
+    .pints-table {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .pints-table h2 {
+        font-size: 40px;
+    }
+
+    table tr td {
+        font-size: 14px;
+    }
+
 
     .icon i {
         font-size: 20px;
@@ -256,10 +344,11 @@ small {
     small {
         font-size: 10px;
     }
+
 }
 
 /*-----------------------------*\
-         pad version
+        i pad/pad version
 \*-----------------------------*/
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
@@ -295,10 +384,31 @@ small {
 
     .highlight {
         flex-direction: column;
-        padding: 0 10px;
     }
+
+
 
     .highlight-description {
         text-align: start;
+        padding-bottom: 100px;
     }
+
+    /* bonus 1 */
+    td {
+        padding: 50px 15px;
+        text-align: center;
+    }
+
+    .pints-table h2 {
+        font-size: 45px;
+    }
+
+    .pints-table {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+    
+
 }
