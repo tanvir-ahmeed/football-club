@@ -63,3 +63,50 @@ body {
     cursor: pointer;
     transform: translateY(-10px);
 }
+/*-----------------------------*\
+         main style
+\*-----------------------------*/
+
+/*-----------------------------*\
+         players card's style
+\*-----------------------------*/
+.all-players {
+    width: 1050px;
+    margin: auto;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+}
+
+.player {
+    width: 300px;
+    height: 456px;
+    padding: 15px;
+    margin: 0;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-photo img {
+    width: 300px;
+    height: 256px;
+
+}
+
+.player-description h3 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #18191F;
+    margin: 16px 0 10px 0;
+}
+
+.player-description p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #6C6C6C;
+    margin: 10px 0;
+}
