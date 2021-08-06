@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------*\
+         common style
+\*-----------------------------*/
+.team-btn {
+    font-size: 16px;
+    background-color: #E02C6D;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition: 0.8s;
+}
+
+.team-btn .fas {
+    margin-left: 5px;
+}
+
+.team-btn:hover {
+    cursor: pointer;
+    background-color: #78af12cc;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+/*-----------------------------*\
+         header style
+\*-----------------------------*/
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2D25A0;
+    padding-bottom: 53px;
+    padding-top: 153px;
+    margin-bottom: 70px;
+
+}
+
+.header-title h2 {
+
+    color: #fff;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.header-banner img {
+    width: 556.01px;
+    height: 438px;
+}
+
+.header-banner {
+    transition: 0.5s;
+}
+
+.header-banner:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
