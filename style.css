@@ -214,7 +214,50 @@ tr:nth-child(2n) {
     background-color: #E02C6D;
     color: #fff;
 }
-
+/* latest blogs */
+.blogs-container{
+    margin: 50px 100px;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 5px;
+}
+.blog{
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: .4s;
+}
+.blog:hover{
+    box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.15);
+}
+.blog-logo img{
+    margin-right: 10px;
+    width: 180px;
+    height: 130px;
+}
+.blog-text{
+    width: 340px;
+    font-size: 15px;
+    font-weight: 500;
+    height: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    
+}
+.blog-text h2{
+    font-size: 15px;
+}
 
 /*-----------------------------*\
          footer style
@@ -344,6 +387,7 @@ small {
     small {
         font-size: 10px;
     }
+    
 
 }
 
